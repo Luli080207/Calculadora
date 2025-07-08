@@ -4,38 +4,46 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Calculadora */
 .calculadora {
   background: #d9d9d9; /* Gris claro */
-  padding: 25px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
 /* Pantalla */
 #pantalla {
   width: 100%;
-  font-size: 2.2em;
-  margin-bottom: 15px;
-  padding: 12px;
+  height: 60px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: 10px;
   text-align: right;
   border: none;
-  border-radius: 8px;
-  background: #f0f0f0; /* Blanco tirando a gris */
-  color: #a259ff; /* Lila para los números */
+  border-radius: 10px;
+  background: #f0f0f0;
+  color: #a259ff; /* Números lilas */
+  box-sizing: border-box;
   outline: none;
+}
+
+/* Contenedor de botones */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 /* Botones */
 .botones button {
-  width: 65px;
-  height: 65px;
-  font-size: 1.4em;
-  margin: 6px;
+  height: 60px;
+  font-size: 1.5em;
   border: none;
   background: #bfbfbf; /* Más gris que la calculadora */
   color: #4d4d4d;
@@ -45,6 +53,6 @@ body {
 }
 
 .botones button:hover {
-  background: #a6a6a6; /* Un poco más oscuro al pasar el mouse */
+  background: #a6a6a6;
   transform: scale(1.05);
 }
