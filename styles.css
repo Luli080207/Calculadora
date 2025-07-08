@@ -1,0 +1,50 @@
+body {
+  background: #f3e8ff; /* Lila claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* Calculadora */
+.calculadora {
+  background: #d9d9d9; /* Gris claro */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pantalla */
+#pantalla {
+  width: 100%;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  padding: 12px;
+  text-align: right;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0; /* Blanco tirando a gris */
+  color: #a259ff; /* Lila para los números */
+  outline: none;
+}
+
+/* Botones */
+.botones button {
+  width: 65px;
+  height: 65px;
+  font-size: 1.4em;
+  margin: 6px;
+  border: none;
+  background: #bfbfbf; /* Más gris que la calculadora */
+  color: #4d4d4d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botones button:hover {
+  background: #a6a6a6; /* Un poco más oscuro al pasar el mouse */
+  transform: scale(1.05);
+}
